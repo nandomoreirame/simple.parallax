@@ -7,9 +7,6 @@ bundle exec travis-lint
 echo 'Jekyll build...'
 bundle exec jekyll build
 
-echo 'Testing htmlproof...'
-bundle exec htmlproof ./_site --href-ignore "#","/simple.parallax/" --disable-external
-
 cd ${HTML_FOLDER}
 
 # config
