@@ -1,5 +1,5 @@
-# jQuery SimpleParallax
-=======================
+jQuery SimpleParallax
+=====================
 
 [demo](http://nandomoreira.me/simple.parallax/)
 
