@@ -1,0 +1,29 @@
+{
+  "name": "jquery-simple-parallax",
+  "homepage": "https://github.com/nandomoreirame/simple.parallax",
+  "description": "Simple Parallax using jQuery",
+  "license": "MIT",
+  "authors": [
+    "Fernando Moreira <nandomoreira.me@gmail.com>"
+  ],
+  "keywords": [
+    "jquery",
+    "parallax"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "playground",
+    "Gemfile",
+    "Gemfile.lock",
+    "_config.yml",
+    "deploy.sh",
+    "travisGemfile",
+    "test",
+    "tests"
+  ],
+}
