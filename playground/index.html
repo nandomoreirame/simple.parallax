@@ -1,0 +1,113 @@
+---
+layout: default
+---
+
+<header>
+  <div class="container">
+    <h1>Simple Parallax using jQuery</h1>
+  </div>
+</header>
+
+<section id="one" class="sections white-section">
+  <div class="container text-center">
+    <h2>Hello world!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+  </div>
+</section>
+
+<section id="two" class="sections parallax" data-parallax-speed="5">
+  <div class="parallax-container text-center">
+    <h2>Using data-parallax-speed</h2>
+  </div>
+</section>
+
+<section id="three" class="sections white-section">
+  <div class="container text-center">
+    <h2>I'm Section three</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+  </div>
+</section>
+
+<section id="four" class="sections parallax">
+  <div class="parallax-container text-center">
+    <h2>I'm Section four</h2>
+  </div>
+</section>
+
+<section id="five" class="sections white-section">
+  <div class="container text-center">
+    <h2>I'm Section five</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+  </div>
+</section>
+
+<section id="five" class="sections silver-section no-padding">
+  <div class="container">
+<h1>the jQuery</h1>
+{% highlight javascript %}
+$.fn.sparallax = function(options) {
+  var $window  = $(window),
+      defaults = {
+        $elements: $(this),
+        speed: 4
+      },
+      settings = $.extend(defaults, options);
+
+  $.each(settings.$elements, function(i, el) {
+    var $el = $(el), offset = 0,
+        speed = ($el.data('parallax-speed') ? $el.data('parallax-speed') : defaults.speed);
+
+    $window.scroll(function() {
+      offset = -($window.scrollTop() / speed);
+      $el.css({ backgroundPosition: '50% ' + offset + 'px' });
+    });
+  });
+};
+{% endhighlight %}
+
+{% highlight javascript %}
+$(document).ready(function() {
+  $('.parallax').sparallax();
+});
+{% endhighlight %}
+  </div>
+
+  <div class="container">
+<h1>the css</h1>
+{% highlight sass %}
+.parallax {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -webkit-transition: background-position .2s ease-in;
+  -moz-transition: background-position .2s ease-in;
+  -o-transition: background-position .2s ease-in;
+  transition: background-position .2s ease-in;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+{% endhighlight %}
+  </div>
+
+  <div class="container">
+<h1>the html</h1>
+{% highlight html %}
+<section class="parallax">
+  <div>Your parallax container...</div>
+</section>
+{% endhighlight %}
+
+<p>Using data-parallax-speed</p>
+{% highlight html %}
+<section class="parallax" data-parallax-speed="10">
+  <div>Your parallax container...</div>
+</section>
+{% endhighlight %}
+  </div>
+
+</section>
+
+<footer id="footer" class="sections parallax text-center" data-parallax-speed="10">
+  <div class="parallax-container">
+    <p>I'm footer :)</p>
+  </div>
+</footer>

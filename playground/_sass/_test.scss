@@ -1,0 +1,90 @@
+
+body {
+  color: #535353;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #f1f2f3;
+  padding: 4em 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.container {
+  max-width: 800px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 500;
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -webkit-transition: background-position .2s ease-in;
+  -moz-transition: background-position .2s ease-in;
+  -o-transition: background-position .2s ease-in;
+  transition: background-position .2s ease-in;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .parallax-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    color: #eee;
+  }
+
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+#two {
+  background-image: url('https://c2.staticflickr.com/8/7011/6749709161_190eea3d8e_b.jpg');
+}
+
+#four {
+  background-image: url('https://c1.staticflickr.com/9/8526/8560201632_076bef5d13_b.jpg');
+}
+
+#footer {
+  background-image: url('https://c1.staticflickr.com/7/6163/6191355915_836c857c39_o.jpg');
+}
+
+.sections,
+.parallax-container {
+  padding: 16em 0;
+}
+
+.no-padding {
+  padding: 2em 0;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.silver-section {
+  background-color: #f1f2f3;
+}
