@@ -16,6 +16,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - HTML_FOLDER="./_site/"
   - GH_REF="nandomoreirame/simple.parallax"
+  - secure: SNGZgzL350A62VdC9jP2oioWlT1yyAXPef9IpM4yVtMernMY7VgpZs192m1wkcPC9Omnuy/xlJy2W8fXZFesbQVX7wcwmSOAhgdIg47h9gO84T/+xwYPScM1H4z2Mo6/srpFEE0Nkoedehk2glpisZLWKJZH+NYdtKZOEFUD1gkfq9sW8rj09bbwPqWgthJqcdjeD6vh6hPxhwEZGE/yp91l80b/ny6CoNnkhAfmft2rqX1D+awa3Bd2sJGFoFf3V+/Qas1o4QRHkutvWCVayOZwwmgkwRYpO419Pl4ZHS+z+XQbDDVYKLQj7ckPvLgK3bVkh/yh/4osgtp93CNyP/0PhbQyIj91pxqk50SIDZDbiKn79gm6jv+kynhMY97AS4X7KW0gRX9hzrLKbHwrooED/5kGLrLgtEccElPB9NQ7LhNF2S+rzHFRxaBwwLiE5T2kEwnGOz6K4//aTmf9YsR3aAIWBnuxflopsY5yxfcnFUFiW5eLC70XwxD8PWVhwoLzXcWttL32UpcrZ5i2FjZ73QiTNGzcByo3ntjeO9VxU8RhkhaEJc4xSNC3C4G2MFX5dR0I3uMmiQbc4D4JqAlnbfR1c4jdiQlBoPSJW2S6IokY2bID1CTyAb13hAPTzXWY/UNefKzHfhhhMdryhpty6n5W26ZLPTh8lmabYnw=
 branches:
   only:
   - gh-pages
