@@ -1,7 +1,7 @@
 jQuery SimpleParallax
 =====================
 
-[demo](http://nandomoreira.me/simple.parallax/)
+[demo](https://github.nandomoreira.me/simple.parallax/)
 
 ### Usage
 
